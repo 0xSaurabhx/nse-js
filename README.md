@@ -11,6 +11,14 @@ nse-js is a Node.js library for fetching data from the National Stock Exchange (
 npm install nse-js
 ```
 
+## API limits
+
+All requests through NSE are rate limited or throttled to 3 requests per second. This allows making large number of requests without overloading the server or getting blocked.
+
+- If downloading a large number of reports from NSE, please do so after-market hours (Preferably late evening).
+- Add an extra 0.5 - 1 sec sleep between requests. The extra run time likely wont make a difference to your script.
+- Save the file and reuse them instead of re-downloading.
+
 ## Usage
 
 ```javascript
@@ -315,3 +323,8 @@ nse.prBhavcopy(new Date(), './downloads').then(data => console.log(data));
 ## License
 
 This project is licensed under the GPL v3 License.
+
+## Credits
+This project is inspired [BennyThadikaran's](https://github.com/BennyThadikaran) python version of NSE API.
+
+```

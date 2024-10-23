@@ -1,6 +1,6 @@
 {
   "name": "nse-js",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "An unofficial Node.js API for NSE India stock exchange",
   "main": "index.js",
   "author": "Saurabh Udupi",
