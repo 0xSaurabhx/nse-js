@@ -325,6 +325,4 @@ nse.prBhavcopy(new Date(), './downloads').then(data => console.log(data));
 This project is licensed under the GPL v3 License.
 
 ## Credits
-This project is inspired [BennyThadikaran's](https://github.com/BennyThadikaran) python version of NSE API.
-
-```
+This project is inspired by [BennyThadikaran's](https://github.com/BennyThadikaran) python version of NSE API.
