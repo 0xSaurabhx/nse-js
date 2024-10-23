@@ -2,6 +2,9 @@
 
 nse-js is a Node.js library for fetching data from the National Stock Exchange (NSE) of India. It provides various methods to retrieve market data, circulars, option chains, corporate actions, and more.
 
+> [!IMPORTANT]
+> **This module is not yet ready for production use as it's not tested on production environment.**
+
 ## Installation
 
 ```bash
