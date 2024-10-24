@@ -1,6 +1,6 @@
 {
   "name": "nse-js",
-  "version": "0.0.5",
+  "version": "0.0.7",
   "description": "An unofficial Node.js API for NSE India stock exchange",
   "main": "index.js",
   "author": "Saurabh Udupi",
@@ -21,6 +21,7 @@
   },
   "dependencies": {
     "axios": "^1.7.7",
+    "http": "^0.0.1-security",
     "luxon": "^3.5.0",
     "unzipper": "^0.12.3"
   }
