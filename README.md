@@ -22,8 +22,9 @@ All requests through NSE are rate limited or throttled to 3 requests per second.
 ## Usage
 
 ```javascript
-const NSE = require('nse.js');
+const { NSE, Extras } = require('./index');
 const nse = new NSE();
+const ex = new Extras("./");
 ```
 
 ## Methods
@@ -267,7 +268,7 @@ Get equity bhavcopy.
 - `folder`: Folder path.
 
 ```javascript
-nse.equityBhavcopy(new Date(), './downloads').then(data => console.log(data));
+ex.equityBhavcopy(new Date(), './downloads').then(data => console.log(data));
 ```
 
 ### `deliveryBhavcopy(date, folder)`
@@ -277,17 +278,7 @@ Get delivery bhavcopy.
 - `folder`: Folder path.
 
 ```javascript
-nse.deliveryBhavcopy(new Date(), './downloads').then(data => console.log(data));
-```
-
-### `indicesBhavcopy(date, folder)`
-Get indices bhavcopy.
-
-- `date`: Date.
-- `folder`: Folder path.
-
-```javascript
-nse.indicesBhavcopy(new Date(), './downloads').then(data => console.log(data));
+ex.deliveryBhavcopy(new Date(), './downloads').then(data => console.log(data));
 ```
 
 ### `fnoBhavcopy(date, folder)`
@@ -297,17 +288,7 @@ Get FNO bhavcopy.
 - `folder`: Folder path.
 
 ```javascript
-nse.fnoBhavcopy(new Date(), './downloads').then(data => console.log(data));
-```
-
-### `pricebandReport(date, folder)`
-Get priceband report.
-
-- `date`: Date.
-- `folder`: Folder path.
-
-```javascript
-nse.pricebandReport(new Date(), './downloads').then(data => console.log(data));
+ex.fnoBhavcopy(new Date(), './downloads').then(data => console.log(data));
 ```
 
 ### `prBhavcopy(date, folder)`
@@ -317,7 +298,7 @@ Get PR bhavcopy.
 - `folder`: Folder path.
 
 ```javascript
-nse.prBhavcopy(new Date(), './downloads').then(data => console.log(data));
+ex.prBhavcopy(new Date(), './downloads').then(data => console.log(data));
 ```
 
 ## License
