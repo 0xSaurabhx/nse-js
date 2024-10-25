@@ -22,7 +22,7 @@ All requests through NSE are rate limited or throttled to 3 requests per second.
 ## Usage
 
 ```javascript
-const { NSE, Extras } = require('./index');
+const { NSE, Extras } = require('nse-js');
 const nse = new NSE();
 const ex = new Extras("./");
 ```
